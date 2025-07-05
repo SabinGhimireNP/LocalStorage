@@ -74,6 +74,11 @@ h2 {
   margin-top: 20px;
 }
 
+.Delete,
+.clear {
+  margin: 20px 30px 0 0;
+}
+
 .add-items input {
   padding: 10px;
   outline: 0;

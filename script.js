@@ -1,7 +1,7 @@
 // Varibles
 const addItems = document.querySelector(".add-items");
 const itemsList = document.querySelector(".plates");
-let items = JSON.parse(localStorage.getItem("Item")) || [];
+const items = JSON.parse(localStorage.getItem("Item")) || [];
 const clr = document.querySelector(".clear");
 const del = document.querySelector(".Delete");
 
@@ -52,7 +52,7 @@ function ClearAll() {
   });
 }
 function DeleteAll() {
-  items = [];
+  items.splice(0, items.length);
   localStorage.setItem("Item", JSON.stringify(items));
   applyList(items, itemsList);
 }
