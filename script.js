@@ -53,7 +53,7 @@ function ClearAll() {
 }
 function DeleteAll() {
   items.splice(0, items.length);
-  localStorage.setItem("Item", JSON.stringify(items));
+  localStorage.clear("Item");
   applyList(items, itemsList);
 }
 applyList(items, itemsList);
